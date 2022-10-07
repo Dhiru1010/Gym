@@ -1,0 +1,514 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    display: flex;
+    flex-basis: auto;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.top a {
+    color: white;
+}
+
+.top-left {
+    display: flex;
+    flex-basis: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    flex-wrap: wrap;
+}
+
+.top-right {
+    display: flex;
+    flex: 0 0 20%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 8vh;
+    margin-top: 2vh;
+}
+
+.navbar i {
+    display: flex;
+    flex-basis: 20%;
+    flex-wrap: wrap;
+}
+
+.nav {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    flex-wrap: wrap;
+}
+
+
+/* Nav Bar */
+
+.drop {
+    position: relative;
+    display: inline-block;
+    transition: 0.5s all ease-in-out;
+}
+
+.dp-bton {
+    color: black;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    transition: 1s all ease-in-out;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    min-width: 260px;
+    z-index: 1;
+    transition: 0.5s all ease-in-out;
+}
+
+.drop-down a {
+    color: black;
+    padding: 12px 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    min-width: 170px;
+    background-color: white;
+}
+
+.drop:hover .drop-down {
+    display: block;
+    transform: scale(1);
+}
+
+.drop-down a:hover {
+    color: white;
+    background-color: red;
+}
+
+
+/* ---------------------------------------------background 1------------------------ */
+
+#bg1 {
+    background-image: url(/images/1.jpg);
+    height: 110vh;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    flex-direction: column;
+    margin: 2vh 0 8vh 0;
+    flex-wrap: wrap;
+}
+
+#bg1 h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+}
+
+#bg1 p {
+    margin: 0vh 0 10vh 0;
+}
+
+.bg1-a {
+    width: 25vh;
+    height: 10vh;
+    font-size: 3vh;
+    background-color: red;
+    color: white;
+    border: transparent;
+    transition: 0.5s all ease-in-out;
+}
+
+.bg1-b {
+    width: 25vh;
+    height: 10vh;
+    font-size: 3vh;
+    color: red;
+    border: transparent;
+    transition: 0.5s all ease-in-out;
+}
+
+.bg1-a:hover {
+    background-color: black;
+}
+
+.bg1-b:hover {
+    background-color: red;
+    color: white;
+}
+
+
+/* --------------------------------------Background 2 --------------------------- */
+
+#bg-2 img {
+    height: 70vh;
+    background-size: cover;
+    padding-right: 5vh;
+}
+
+#bg-2 {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    margin: 12vh 6vh 5vh 5vh;
+}
+
+#bg-2 h1 {
+    font-size: 10vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5vh 0 0 0;
+}
+
+.bg-div {
+    display: flex;
+}
+
+.bg2-icon {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7vh;
+    flex-wrap: wrap;
+}
+
+.bg2-icon div i {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.bg2-div button {
+    height: 8vh;
+    width: 30vh;
+    font-size: medium;
+    color: white;
+    background-color: black;
+    border: transparent;
+}
+
+.bg2-div button:hover {
+    background-color: red;
+}
+
+
+/* --------------------------------------background3----------------------------- */
+
+#bg-3 {
+    background-color: black;
+    color: white;
+    height: 120vh;
+    text-align: center;
+    padding-top: 15vh;
+    font-weight: bolder;
+    margin-bottom: 7vh;
+    margin-top: 15vh;
+}
+
+#bg-3>h1 {
+    font-size: 7vh;
+    margin-top: 5vh;
+}
+
+.bg-3 {
+    display: flex;
+    width: auto;
+    height: 60vh;
+    justify-content: space-around;
+    margin-top: 15vh;
+    flex-wrap: wrap;
+}
+
+.bg-3-item {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    height: 50vh;
+    border: 2px solid wheat;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.7s all ease-in-out;
+}
+
+.bg-3-item h1 {
+    font-size: 5vh;
+    font-weight: 900;
+}
+
+.bg-3-item:hover {
+    background-color: red;
+}
+
+
+/* ----------------------------------background 4 -------------------------------*/
+
+#bg-4 img {
+    flex-basis: 35%;
+    width: auto;
+    height: 70vh;
+    background-size: cover;
+}
+
+#bg-4 {
+    display: flex;
+    justify-content: space-around;
+    text-align: start;
+    margin: 15vh 0;
+    flex-wrap: wrap;
+}
+
+#bg-4 h1 {
+    font-weight: bolder;
+    font-size: 10vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10vh 0 0 0;
+}
+
+.bg-4-div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    list-style-type: square;
+    flex-wrap: wrap;
+}
+
+.bg-4-div ul li {
+    padding-top: 2vh;
+}
+
+.bg-4-button {
+    width: 30vh;
+    height: 10vh;
+    font-size: large;
+    background-color: red;
+    margin-top: 4vh;
+    border: transparent;
+    color: white;
+    transition: 0.5s all ease-in-out;
+}
+
+.bg-4-button:hover {
+    background-color: black;
+    font-size: larger;
+}
+
+
+/* ------------------------------Background5--------------------------- */
+
+#bg-5 {
+    background-color: rgb(33, 30, 30);
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 4vh 0;
+    flex-wrap: wrap;
+}
+
+#bg-5 button {
+    height: 30vh;
+    width: 30vh;
+    font-size: 8vh;
+    color: white;
+    background: transparent;
+    border: 2vh solid red;
+    border-radius: 75%;
+}
+
+#bg-5 h3 {
+    color: white;
+    margin-top: 4vh;
+    padding-left: 5vh;
+}
+
+
+/* ------------------------Background6 ------------------------------ */
+
+.bg-6-head {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6vh 0;
+    flex-wrap: wrap;
+}
+
+.bg-6-head h1 {
+    font-size: 7vh;
+    font-weight: 900;
+}
+
+.bg-5-cont {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.bg-5-item div {
+    overflow: hidden;
+}
+
+.bg-5-item img {
+    width: 100%;
+    height: 40vh;
+    transition: 0.5s all ease-in-out;
+}
+
+.bg-5-item {
+    margin: 4vh;
+}
+
+.bg-5-item h1 {
+    font-size: 6vh;
+    margin-bottom: 1vh;
+}
+
+.bg-5-item button {
+    margin-top: 2vh;
+    height: 5vh;
+    width: 25vh;
+    font-size: large;
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.bg-5-item img:hover {
+    transform: scale(1.2);
+}
+
+.bg-5-item button:hover {
+    transform: scale(1.2);
+    font-weight: 400;
+}
+
+
+/* ----------------------------------Foooter--------------------------------- */
+
+#footer-red {
+    width: auto;
+    height: 18vh;
+    display: flex;
+    color: white;
+    background-color: red;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.footer-red-1 {
+    display: flex;
+    flex-basis: 45%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: large;
+    font-weight: 500;
+}
+
+.footer-red-2 {
+    display: flex;
+    flex-basis: 30%;
+    padding: 2vh;
+}
+
+.footer-red-2 input {
+    width: 40vh;
+    height: 6vh;
+    margin-right: 2vh;
+    border: none;
+}
+
+.footer-red-2 button {
+    width: 15vh;
+    height: 6vh;
+    border: transparent;
+    font-size: large;
+    font-weight: 500;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
+
+#footer-black {
+    width: auto;
+    height: 70vh;
+    display: flex;
+    color: white;
+    background-color: black;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+}
+
+.footer-black-item {
+    display: flex;
+    flex-basis: 22%;
+    flex-direction: column;
+    line-height: 2;
+}
+
+.footer-black-item img {
+    width: auto;
+    height: 40vh;
+    padding: 0 15px 0 0;
+}
+
+
+/* .footer-black-item h1 {} */
+
+.f-sup {
+    display: flex;
+    width: 45vh;
+    justify-content: space-between;
+    align-items: center;
+    height: 17vh;
+    margin-top: 3vh;
+    background: gray;
+    padding: 12px;
+}
+
+.f-sup button {
+    font-size: larger;
+    height: 8vh;
+    width: 14vh;
+    background: red;
+    color: white;
+    cursor: pointer;
+    margin-right: 2vh;
+}
+
+.foot {
+    display: flex;
+    width: auto;
+    height: 15vh;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+}
+
+.foot-1 {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-around;
+    text-decoration: none;
+}
